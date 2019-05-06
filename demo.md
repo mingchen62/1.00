@@ -35,8 +35,8 @@ Get status of a specific meter ID at a given point of time</p>
 </ul>
 <p>Some sample query:</p>
 <p><img src="https://s3.amazonaws.com/mchen62/smart_parking_dynamo.png" alt="enter image description here"></p>
-<p>Demo:<br>
-meter_id: 95085_Florencio_Lights_XYZ_AB_4<br>
+<p>Demo data point:</p>
+<p>meter_id: 95085_Florencio_Lights_XYZ_AB_4<br>
 ts: 1519516800</p>
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
