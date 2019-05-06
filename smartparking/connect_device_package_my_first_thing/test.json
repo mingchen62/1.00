@@ -1,0 +1,10 @@
+{
+"timestamp": 1519516800,
+"meterId": "test",
+"isOccupied": true,
+"meter": {
+"number": 4,
+"location": ["-75.5712","-130.5355"],
+"address": "95085 Florencio Lights XYZ AB"
+}
+}
