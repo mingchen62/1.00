@@ -9,6 +9,7 @@
 <p><strong>Data ingestion</strong></p>
 <p>Go to terminal and invoke nodeJS program using  AWS IOT SDK<br>
 % cd connect_device_package_my_first_thing<br>
+% cp all_events.json events.json<br>
 % node device.js<br>
 (it will pump events.json to mqtt topic: ‘myTopic’)<br>
 To ingest single event, use json file, test.json</p>
