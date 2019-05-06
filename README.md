@@ -3,9 +3,6 @@
 
 ---
 
-<blockquote>
-<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
-</blockquote>
 <h1 id="section">1.00</h1>
 <p>1.00 Engineering computation</p>
 <p><strong>Summary</strong></p>
@@ -48,18 +45,18 @@ We’ll first present goals and requirements. Then, we’ll discuss data flow, f
 </li>
 </ol>
 <p>Raw JSON from device</p>
-<p>{</p>
-<p>“timestamp”: 1519516800,</p>
-<p>“isOccupied”: true,</p>
-<p>“meter”: {</p>
-<p>“number”: 4,</p>
-<p>“location”: [</p>
-<p>“-75.5712”,</p>
-<p>“-130.5355”</p>
-<p>],</p>
-<p>“address”: “95085 Florencio Lights XYZ AB”</p>
-<p>}</p>
-<p>}</p>
+<p>{<br>
+“timestamp”: 1519516800,<br>
+“isOccupied”: true,<br>
+“meter”: {<br>
+“number”: 4,<br>
+“location”: [<br>
+“-75.5712”,<br>
+“-130.5355”<br>
+],<br>
+“address”: “95085 Florencio Lights XYZ AB”<br>
+}<br>
+}</p>
 <p>With the help of Lambda, the nested JSON in the raw data can be flattened into a time series table into Dynamo db as defined as follows. The field ‘meter_ID’ is constructed by combining street address and meter number from raw JSON data into a unique partition key to uniquely identify a parking spot.</p>
 <p>Table 1: ‘TimeSeries’ Table in Dynamo DB segmented by time</p>
 
