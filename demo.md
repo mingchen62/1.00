@@ -3,21 +3,19 @@
 
 ---
 
-<p>**</p>
 <h2 id="demo">Demo</h2>
-<pre><code>Prerequisite
+<pre><code>Prerequisite: To config AWS private key and certificates
 </code></pre>
-<p>To config AWS private key and certificates</p>
-<p>**Data ingestion</p>
+<p><strong>Data ingestion</strong></p>
 <p>Go to terminal and invoke nodeJS program using  AWS IOT SDK<br>
 % cd connect_device_package_my_first_thing<br>
 % node device.js<br>
 (it will pump events.json to mqtt topic: ‘myTopic’)<br>
 To ingest single event, use json file, test.json</p>
-<p>**Data persistence</p>
+<p><strong>Data persistence</strong></p>
 <p>Go to AWS console, check dynamoDB, table<br>
 <img src="https://s3.amazonaws.com/mchen62/smart_parking_dynamo.png" alt="aws_dynamo_db"></p>
-<p>**<strong>Data consumption</strong></p>
+<p><strong>Data consumption</strong></p>
 <p>Go to AWS API gateway to query data.</p>
 <pre><code>REST API
 </code></pre>
